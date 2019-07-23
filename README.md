@@ -1,5 +1,4 @@
 # control-sim
-*Note: The content of this repository is intended for source code review only.*
 
 ## Background
 

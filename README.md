@@ -23,6 +23,12 @@ where
 
 is the current residual. The latter matrix equation is solved directly, as a system of *n*(*n*-1)/2 linear equations in the entries of the unknown symmetric matrix *dX*.
 
+## Main Source Files
+* [`src/gencare.c`][3] &nbsp; Solution to the generalized Riccati equation
+* [`src/genlyap.c`][4] &nbsp; Solution to the generalized Lyapunov equation
+* [`src/random.c`][5] &nbsp;&nbsp;&nbsp; Generation of random matrices with specified properties
+
+
 ## Remarks/Caveats
 
 * No mathematical error analysis of the numerical scheme has been carried out by the author.
@@ -33,3 +39,6 @@ is the current residual. The latter matrix equation is solved directly, as a sys
 
 [1]:https://link.springer.com/book/10.1007/b10906
 [2]:https://ieeexplore.ieee.org/document/4124845
+[3]:/src/gencare.c
+[4]:/src/genlyap.c
+[5]:/src/random.c

@@ -33,7 +33,7 @@ is the current residual. The latter matrix equation is solved directly, as a sys
 * No mathematical error analysis of the numerical scheme has been carried out by the author.
 * Due to the naive method for solution of the generalized Lyapunov equations arising at each iteration of the algorithm outlined above, the provided code is not suitable for problems involving large matrices.
 * The current version of the code uses C99-style variable length arrays as local variables for storing matrices of order *O*(*n*^2), and hence is limited by the size of the call-stack on the machine where they are to be executed.
-* The code relies on the Intel Math Kernel Library (MKL) for calls to BLAS/LAPACK routines, as well as on the Subroutine Library in Systems and Control Theory (SLICOT), version 5.6. The source code for SLICOT is available upon request from http://slicot.org, but is not included in this repository, due to licensing restrictions.
+* The code relies on the Intel Math Kernel Library (MKL) for calls to BLAS/LAPACK routines, as well as on the Subroutine Library in Systems and Control Theory (SLICOT). The source code for SLICOT is available upon request from http://slicot.org, but is not included in this repository, due to licensing restrictions.
 * On the author's test machine, the C99 code in this repository and the Fortran 77 code from SLICOT were compiled with the Intel C++/Fortran 2018 compilers for Windows. The MATLAB wrapper functions for the C code were compiled with MATLAB R2018a for Windows. Only limited testing of the code has been carried out.
 
 [1]:https://link.springer.com/book/10.1007/b10906

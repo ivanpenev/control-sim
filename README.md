@@ -20,7 +20,7 @@ where
 
 *Yk* = *A' Xk* + *Xk A* + *G' Xk G* - *Xk B Xk* + *Q* 
 
-is the current residual. The latter matrix equation is solved directly, as a system of *n*(*n*-1)/2 linear equations in the entries of the unknown symmetric matrix *dX*.
+is the current residual. The latter matrix equation is solved directly, as a system of *n*(*n*+1)/2 linear equations in the entries of the unknown symmetric matrix *dX*.
 
 ## Main Source Files
 * [`src/gencare.c`][3] &nbsp; Solution to the generalized Riccati equation

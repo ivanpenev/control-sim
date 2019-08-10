@@ -5,7 +5,7 @@ LIBDIR = lib
 BINDIR = bin
 CC = icl
 LD = link
-CFLAGS = /Qstd=c99 /Qrestrict /Qopenmp /O3 /Qx:SKYLAKE /DMKL_ILP64 \
+CFLAGS = /Qstd=c99 /Qrestrict /Qopenmp /O3 /QxHost /DMKL_ILP64 \
 		-I"%MKLROOT%"\include -I$(INCDIR)
 LDFLAGS = /libpath:$(LIBDIR) controlsim.lib slicot.lib lpkaux.lib \
 		mkl_intel_ilp64_dll.lib mkl_intel_thread_dll.lib mkl_core_dll.lib libiomp5md.lib

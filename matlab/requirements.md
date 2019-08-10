@@ -1,10 +1,8 @@
-## SLICOT v5.6
-slicot-5.6_win64.zip
+## Intel MKL 2018
+libiomp5md.dll
 
-## Microsoft Visual C++ 2015 Redistributable
-vc_redist.x64.exe
+mkl_avx2.dll
 
-## Redistributable Libraries for Intel C++/Fortran Compilers
-ww_icl_redist_msi_2018.2.185.zip
+mkl_core.dll
 
-ww_ifort_redist_msi_2018.2.185.zip
+mkl_intel_thread.dll

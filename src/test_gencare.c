@@ -2,12 +2,8 @@
 
 int main(int argc, char *argv[])
 {
-	const MKL_INT n = (argc > 0? atoi(argv[1]): 10), m = n/2, mp = n * (n + 1) / 2;
+	const MKL_INT n = (argc > 1? atoi(argv[1]): 10), m = n/2, mp = n * (n + 1) / 2;
 	const double gamma = 0.5;
-	/*double A[4] = {-3.953622e+00, 2.521161e-01,	1.004975e-01, -4.257993e+00},
-		G[4] = {-7.972148e-01, -9.355231e-01, 9.636167e-01,	-7.912736e-01},
-		BBt[4] = {1.157650e-02, -1.069696e-01, -1.069696e-01, 9.884235e-01},
-		Q[4] = {2.581144e+00, 1.957319e-01, 1.957319e-01, 2.635019e+00}, X[4], Y[4];*/
 	double A[n * n], G[n * n], B[n * m], BtB[m * m], BBt[n * n], Q[n * n], X[n * n], Y[n * n];
 	double *T = malloc(mp * mp * sizeof(double));
 	if (T == NULL) return -1;
